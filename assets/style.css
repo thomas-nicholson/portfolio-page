@@ -47,10 +47,9 @@ p {
     flex: 0 0 50px;
     /* margin: 40px; */
     /* margin-bottom: 10px; */
-    border-style: solid;
-    border-color: grey;
-    border-width: 1px;
-    /* box-shadow: 0px 8px 8px 4px rgba(0, 0, 0, 0.5);     */
+    outline: 1px solid; /* use instead of border */
+    margin-top: 1px;
+    margin-left: 1px;
 }
 
 .portfolio-img {
@@ -78,6 +77,10 @@ figcaption {
 }
 
 @media screen and (max-width: 867px) {
+    h2 {
+        margin-left: 0px;
+        text-align: center;
+    }
     ul li {
         display: block;
     }
