@@ -1,3 +1,8 @@
+:root {
+    --img-width: 208px;
+    --img-height: 117px; 
+  }
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
@@ -37,17 +42,38 @@ p {
     text-justify: distribute;
 }
 
+.hero{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-item {
+    flex: 1 0 50px;
+    outline: 1px solid;
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-bottom: 20px;
+}
+
+.hero-img {
+    display: block;
+    margin:auto;
+    width: 70%;
+    min-width: var(--img-width);
+    min-height: var(--img-height);
+}
+
 .row {
     display: flex;
+    justify-content:center;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .portfolio-item {
     flex: 0 0 50px;
     /* margin: 40px; */
     /* margin-bottom: 10px; */
-    outline: 1px solid; /* use instead of border */
+    outline: 1px solid;
     margin-top: 1px;
     margin-left: 1px;
 }
