@@ -23,7 +23,7 @@ header h1 {
     display: inline-block;
 }
 
-header nav {
+nav {
     float: right;
     display: block;
     font-size: 100%;
@@ -55,7 +55,8 @@ img {
     display: inline;
     width: 15%;
     height: 15%;
-    border-radius: 100px;
+    border-radius: 200px;
+    margin-left: 20px;
 }
 
 a {
@@ -123,23 +124,25 @@ figcaption {
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
     nav {
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 867px) {
-    h2 {
-        margin-left: 0px;
         text-align: center;
-    }
-    ul li {
-        display: block;
+        padding-top: 0px;
+
     }
 }
 
 @media screen and (max-width: 667px) {
+
+    h1, h2 {
+        text-align: center;
+        margin-left: 0px;
+    }
+    
+    #about-me h2 {
+        display: block;
+    }
 
     .contact-row ul li {
         display: block;
@@ -147,6 +150,14 @@ figcaption {
 }
 
 @media screen and (max-width: 575px) {
+    
+    ul {
+        padding: 0px;
+    }
+    ul li {
+        margin-right: 0px;
+        display: block;
+    }
 
     .my-photo {
         display: block;
@@ -154,6 +165,7 @@ figcaption {
         width: 100px;
         height: 100px;
     }
+
 
     hr {
         display: block;
