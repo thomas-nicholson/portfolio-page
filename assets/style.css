@@ -74,7 +74,7 @@ p {
     text-justify: distribute;
 }
 
-.hero{
+.hero {
     display: flex;
     justify-content: center;
 }
@@ -83,6 +83,7 @@ p {
     flex: 1 0 50px;
     outline: 1px solid;
     text-align: center;
+    position: relative;
     margin-top: 1px;
     margin-left: 1px;
     margin-bottom: 20px;
@@ -106,6 +107,7 @@ p {
 .portfolio-item {
     flex: 0 0 50px;
     text-align: center;
+    position: relative;
     background-color: var(--secondary-color);
     outline: 1px solid;
     margin-top: 1px;
@@ -117,6 +119,18 @@ p {
     margin:auto;
     width: 208px;
     height: 117px;
+}
+
+.github-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+}
+
+figure {
+    position: relative;
 }
 
 figcaption {
